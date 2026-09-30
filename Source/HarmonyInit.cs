@@ -1,4 +1,5 @@
 using System.Reflection;
+using Falloutization.Ideologions.Patches;
 using HarmonyLib;
 
 namespace Falloutization.Ideologions;
@@ -8,6 +9,8 @@ internal static class HarmonyInit
 {
     static HarmonyInit()
     {
-        new Harmony("Falloutization.Ideologions").PatchAll(Assembly.GetExecutingAssembly());
+        Harmony harmony = new Harmony("Falloutization.Ideologions");
+        harmony.PatchAll(Assembly.GetExecutingAssembly());
+        LeaderConversionMemePatch.Apply(harmony);
     }
 }
