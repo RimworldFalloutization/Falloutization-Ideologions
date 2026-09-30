@@ -1,0 +1,34 @@
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE files
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.DotSettings
+
+# Build artifacts
+bin/
+obj/
+*.dll
+*.pdb
+*.mdb
+
+# Temporary files
+*.tmp
+*.log
+
+# NuGet packages
+packages/
+*.nupkg
+.nuget/
+
+# Keep solution and project files
+!*.sln
+!*.csproj

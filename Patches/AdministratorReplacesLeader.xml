@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Administrator is the single leader role, not a second social specialist. -->
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/PreceptDef[defName="FCP_IdeoRole_Followers_Administrator"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>PreceptRoleSingleBase</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PreceptDef[defName="FCP_IdeoRole_Followers_Administrator"]</xpath>
+    <value>
+      <leaderRole>true</leaderRole>
+      <canRemoveInUI>false</canRemoveInUI>
+      <expectationsOffset>2</expectationsOffset>
+      <restrictToSupremeGenderChance>0</restrictToSupremeGenderChance>
+      <ignoreNameUniqueness>true</ignoreNameUniqueness>
+      <roleApparelRequirementCountCurve>
+        <points>
+          <li>(0, 1)</li>
+          <li>(1, 1)</li>
+        </points>
+      </roleApparelRequirementCountCurve>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PreceptDef[defName="FCP_IdeoRole_Followers_Administrator"]/displayOrderInImpact</xpath>
+    <value>
+      <displayOrderInImpact>1000</displayOrderInImpact>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PreceptDef[defName="FCP_IdeoRole_Followers_Administrator"]/grantedAbilities</xpath>
+    <value>
+      <grantedAbilities>
+        <li>LeaderSpeech</li>
+        <li>WorkDrive</li>
+        <li>CombatCommand</li>
+        <li>Trial</li>
+      </grantedAbilities>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PreceptDef[defName="FCP_IdeoRole_Followers_Administrator"]/roleTags</xpath>
+    <value>
+      <li>Leader</li>
+    </value>
+  </Operation>
+
+  <!-- Leader cannot be generated or picked while Universal Compassion is on the ideoligion. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/PreceptDef[defName="IdeoRole_Leader"]/conflictingMemes</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/PreceptDef[defName="IdeoRole_Leader"]/conflictingMemes</xpath>
+      <value>
+        <li>FCP_Meme_Followers_Compassion</li>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/PreceptDef[defName="IdeoRole_Leader"]</xpath>
+      <value>
+        <conflictingMemes>
+          <li>FCP_Meme_Followers_Compassion</li>
+        </conflictingMemes>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <!-- NPC chapters name this role Administrator. The vanilla Leader override would rename a role that is no longer generated. -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/FactionDef[defName="FCP_Faction_Followers"]/modExtensions/li[@Class="FCP.Factions.FactionExtension_FixedIdeo"]/roleOverrides/li[preceptDef="IdeoRole_Leader"]</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/FactionDef[defName="FCP_Faction_Followers"]/modExtensions/li[@Class="FCP.Factions.FactionExtension_FixedIdeo"]/roleOverrides/li[preceptDef="FCP_IdeoRole_Followers_Administrator"]</xpath>
+    <value>
+      <newName>Administrator</newName>
+    </value>
+  </Operation>
+
+</Patch>
