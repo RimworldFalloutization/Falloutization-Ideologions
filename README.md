@@ -2,4 +2,10 @@
 
 ## Changes
 
-- Universal Compassion (FCP - Followers of the Apocelypse) mergerd with and replaces the Leader role
+- Universal Compassion (FCP - Followers of the Apocelypse) Administrator role mergerd with and replaces the Leader role
+- Mechanoid supremacy meme renamed to Robot supremacy, Mechhacker role to Mechanist, Mechanoid effigy to Robot effigy
+- Insectoid supremacy meme renamed to Ant supremacy
+- Imperial hierarchy meme renamed to Whitespring affiliate
+- Joiners and guests should no longer generate with space faction ideologions
+- Enclave Radicals renamed back to Salvagers and their meme requires Scrappers instead of Shipborn
+- Enclave Remnants meme requires Enclave Manifest Destiny meme instead of Shipborn
