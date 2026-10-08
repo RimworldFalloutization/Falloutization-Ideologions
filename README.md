@@ -15,6 +15,7 @@
 - Feral Ghoul Horde's ideologion should have Gestalt, Survivalist Lifestyle and Mutant Masters memes
 - All ghoul and supermutant variant xenotypes now affected by Mutants precept
 - Spore Carriers' ideologion should have Gestalt, Survivalist Lifestyle and Nature Primacy memes
+- Pirate Scavengers (Ancient Urban Ruins) should get Survivalist Lifestyle and Scrapper memes.
 
 ## Removals
 - Psychic mysticism meme

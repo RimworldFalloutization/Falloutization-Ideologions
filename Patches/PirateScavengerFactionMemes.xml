@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Pirate Scavenger (Ancient urban ruins): Survivalist Lifestyle + Scrapper -->
+  <Operation Class="PatchOperationReplace" MayRequire="VanillaExpanded.VMemesE,FIP.Greenway,XMB.AncientUrbanrUins.MO">
+    <xpath>Defs/FactionDef[defName="AM_EnemyPirate"]/allowedMemes</xpath>
+    <value>
+      <allowedMemes>
+        <li>Structure_Ideological</li>
+        <li>Greenway_SurvivalistLifestyle</li>
+        <li>VME_Scrapper</li>
+      </allowedMemes>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace" MayRequire="VanillaExpanded.VMemesE,FIP.Greenway,XMB.AncientUrbanrUins.MO">
+    <xpath>Defs/FactionDef[defName="AM_EnemyPirate"]/requiredMemes</xpath>
+    <value>
+      <requiredMemes>
+        <li>Structure_Ideological</li>
+        <li>Greenway_SurvivalistLifestyle</li>
+        <li>VME_Scrapper</li>
+      </requiredMemes>
+    </value>
+  </Operation>
+
+</Patch>

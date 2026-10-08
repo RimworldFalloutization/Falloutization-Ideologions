@@ -38,6 +38,7 @@
         <li>Ludeon.RimWorld.Odyssey</li>
         <li>Rick.FCP.Enclave</li>
         <li>FIP.HHTools</li>
+        <li>XMB.AncientUrbanrUins.MO</li>
     </loadAfter>
     <modVersion>1.0</modVersion>
 </ModMetaData>
