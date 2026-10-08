@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Ancients / AncientsHostile: Transhumanist -> Progressive -->
+  <Operation Class="PatchOperationReplace" MayRequire="VanillaExpanded.VMemesE">
+    <xpath>Defs/FactionDef[@Name="AncientsBase"]/allowedMemes/li[.="Transhumanist"]</xpath>
+    <value>
+      <li>VME_Progressive</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace" MayRequire="VanillaExpanded.VMemesE">
+    <xpath>Defs/FactionDef[@Name="AncientsBase"]/requiredMemes/li[.="Transhumanist"]</xpath>
+    <value>
+      <li>VME_Progressive</li>
+    </value>
+  </Operation>
+
+</Patch>
