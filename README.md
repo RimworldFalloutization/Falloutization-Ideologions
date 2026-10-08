@@ -14,6 +14,7 @@
 - Wastelanders (traders and caravans) should get Traders and Nomad memes in their ideologion
 - Feral Ghoul Horde's ideologion should have Gestalt, Survivalist Lifestyle and Mutant Masters memes
 - All ghoul and supermutant variant xenotypes now affected by Mutants precept
+- Spore Carriers' ideologion should have Gestalt, Survivalist Lifestyle and Nature Primacy memes
 
 ## Removals
 - Psychic mysticism meme

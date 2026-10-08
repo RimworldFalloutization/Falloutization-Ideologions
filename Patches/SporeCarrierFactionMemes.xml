@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Spore Carriers: Gestalt + Nature Primacy + Survivalist Lifestyle (keep Archism as structure) -->
+  <Operation Class="PatchOperationReplace" MayRequire="VanillaExpanded.VMemesE,FIP.Greenway,Rick.FCP.Plants">
+    <xpath>Defs/FactionDef[defName="FCP_Faction_SporeCarrier"]/allowedMemes</xpath>
+    <value>
+      <allowedMemes>
+        <li>Structure_Archist</li>
+        <li>VME_Gestalt</li>
+        <li>NaturePrimacy</li>
+        <li>Greenway_SurvivalistLifestyle</li>
+      </allowedMemes>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace" MayRequire="VanillaExpanded.VMemesE,FIP.Greenway,Rick.FCP.Plants">
+    <xpath>Defs/FactionDef[defName="FCP_Faction_SporeCarrier"]/requiredMemes</xpath>
+    <value>
+      <requiredMemes>
+        <li>Structure_Archist</li>
+        <li>VME_Gestalt</li>
+        <li>NaturePrimacy</li>
+        <li>Greenway_SurvivalistLifestyle</li>
+      </requiredMemes>
+    </value>
+  </Operation>
+
+</Patch>
