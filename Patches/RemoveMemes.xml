@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Psychic mysticism (VME Psychic Focus, renamed by Greenway). -->
+  <Operation Class="PatchOperationAdd" MayRequire="VanillaExpanded.VMemesE">
+    <xpath>Defs/MemeDef[defName="VME_PsychicFocus"]</xpath>
+    <value>
+      <randomizationSelectionWeightFactor>0</randomizationSelectionWeightFactor>
+      <hiddenInChooseMemes>true</hiddenInChooseMemes>
+    </value>
+  </Operation>
+
+</Patch>

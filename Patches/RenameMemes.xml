@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationReplace" MayRequire="VanillaExpanded.VMemesE">
+    <xpath>Defs/MemeDef[defName="VME_InsectoidSupremacy"]/label</xpath>
+    <value>
+      <label>Ant supremacy</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace" MayRequire="VanillaExpanded.VMemesE">
+    <xpath>Defs/MemeDef[defName="VME_MechanoidSupremacy"]/label</xpath>
+    <value>
+      <label>Robot supremacy</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace" MayRequire="VanillaExpanded.VMemesE">
+    <xpath>Defs/MemeDef[defName="VME_Royal"]/label</xpath>
+    <value>
+      <label>Whitespring affiliate</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace" MayRequire="VanillaExpanded.VMemesE">
+    <xpath>Defs/PreceptDef[defName="VME_IdeoRole_Mechacker"]/label</xpath>
+    <value>
+      <label>Mechanist</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace" MayRequire="VanillaExpanded.VMemesE">
+    <xpath>Defs/ThingDef[defName="VME_MechanoidEffigy"]/label</xpath>
+    <value>
+      <label>Robot effigy</label>
+    </value>
+  </Operation>
+
+</Patch>

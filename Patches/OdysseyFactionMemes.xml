@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Enclave Remnants (TradersGuild): Shipborn -> Enclave Manifest Destiny -->
+  <Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Odyssey,Rick.FCP.Enclave">
+    <xpath>Defs/FactionDef[defName="TradersGuild"]/requiredMemes/li[.="Shipborn"]</xpath>
+    <value>
+      <li>FCP_Meme_EnclaveManifestDestiny</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+    <xpath>Defs/FactionDef[defName="TradersGuild"]/disallowedMemes</xpath>
+    <value>
+      <li>Shipborn</li>
+    </value>
+  </Operation>
+
+  <!-- Enclave Radicals (Salvagers): Shipborn -> Scrapper -->
+  <Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Odyssey,VanillaExpanded.VMemesE">
+    <xpath>Defs/FactionDef[defName="Salvagers"]/forcedMemes/li[.="Shipborn"]</xpath>
+    <value>
+      <li>VME_Scrapper</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+    <xpath>Defs/FactionDef[defName="Salvagers"]/disallowedMemes</xpath>
+    <value>
+      <li>Shipborn</li>
+    </value>
+  </Operation>
+
+</Patch>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Overrides Greenway DefInjected labels for these memes. -->
+  <VME_InsectoidSupremacy.label>Ant supremacy</VME_InsectoidSupremacy.label>
+  <VME_MechanoidSupremacy.label>Robot supremacy</VME_MechanoidSupremacy.label>
+  <VME_Royal.label>Whitespring affiliate</VME_Royal.label>
+
+</LanguageData>

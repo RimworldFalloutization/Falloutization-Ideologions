@@ -30,6 +30,11 @@
         <li>brrainz.harmony</li>
         <li>Rick.FCP.Core.Tools</li>
         <li>Rick.FCP.Followers</li>
+        <li>VanillaExpanded.VMemesE</li>
+        <li>FIP.Greenway</li>
+        <li>Ludeon.RimWorld.Odyssey</li>
+        <li>Rick.FCP.Enclave</li>
+        <li>FIP.HHTools</li>
     </loadAfter>
     <modVersion>1.0</modVersion>
 </ModMetaData>
