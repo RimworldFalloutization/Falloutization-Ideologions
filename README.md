@@ -10,3 +10,4 @@
 - Enclave Radicals renamed back to Salvagers and their meme requires Scrappers instead of Shipborn
 - Enclave Remnants meme requires Enclave Manifest Destiny meme instead of Shipborn
 - Ancients' ideologion will have Progressive meme instead of Transhumanist
+- Gun Runners should get Traders and Craft culture memes in their ideologion

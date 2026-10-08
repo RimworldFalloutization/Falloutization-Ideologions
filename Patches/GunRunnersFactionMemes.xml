@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Gun Runners: require Trader + Craft Culture -->
+  <Operation Class="PatchOperationAdd" MayRequire="VanillaExpanded.VMemesE,Rick.FCP.Wastelanders">
+    <xpath>Defs/FactionDef[defName="FCP_Faction_Hidden_GunRunners_Blueprint_Traders"]/requiredMemes</xpath>
+    <value>
+      <li>VME_Trader</li>
+      <li>VME_CraftCulture</li>
+    </value>
+  </Operation>
+
+</Patch>
