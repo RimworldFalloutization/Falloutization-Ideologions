@@ -12,5 +12,6 @@ internal static class HarmonyInit
         Harmony harmony = new Harmony("Falloutization.Ideologions");
         harmony.PatchAll(Assembly.GetExecutingAssembly());
         LeaderConversionMemePatch.Apply(harmony);
+        MutantXenotypeListPatch.Apply();
     }
 }
