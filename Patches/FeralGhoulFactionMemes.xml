@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Feral Ghoul Horde: Gestalt + Survivalist Lifestyle + Mutant Masters (keep Archism as structure) -->
+  <Operation Class="PatchOperationReplace" MayRequire="VanillaExpanded.VMemesE,FIP.Greenway,Rick.FCP.Ghouls">
+    <xpath>Defs/FactionDef[defName="FCP_Faction_Ghoul_Feral"]/allowedMemes</xpath>
+    <value>
+      <allowedMemes>
+        <li>Structure_Archist</li>
+        <li>VME_Gestalt</li>
+        <li>Greenway_SurvivalistLifestyle</li>
+        <li>Greenway_MutantMasters</li>
+      </allowedMemes>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace" MayRequire="VanillaExpanded.VMemesE,FIP.Greenway,Rick.FCP.Ghouls">
+    <xpath>Defs/FactionDef[defName="FCP_Faction_Ghoul_Feral"]/requiredMemes</xpath>
+    <value>
+      <requiredMemes>
+        <li>Structure_Archist</li>
+        <li>VME_Gestalt</li>
+        <li>Greenway_SurvivalistLifestyle</li>
+        <li>Greenway_MutantMasters</li>
+      </requiredMemes>
+    </value>
+  </Operation>
+
+</Patch>

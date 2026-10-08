@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Wastelanders: require Trader + Nomad -->
+  <Operation Class="PatchOperationAdd" MayRequire="VanillaExpanded.VMemesE,Rick.FCP.Wastelanders">
+    <xpath>Defs/FactionDef[defName="FCP_Faction_Hidden_Wastelanders"]/requiredMemes</xpath>
+    <value>
+      <li>VME_Trader</li>
+      <li>VME_Nomad</li>
+    </value>
+  </Operation>
+
+</Patch>
